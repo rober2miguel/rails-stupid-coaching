@@ -1,9 +1,11 @@
 <h1>Stupid Coaching 🚀</h1>
 
+<div class="user-question">
 <p><%= "#{@question}" %></p>
 <p>-You</p>
-<br>
+</div>
+<div class="coach-answer">
 <p><%= @answer %></p>
-<p>-Your coach</p>
-
+<p><strong>-Your coach</strong></p>
+</div>
 <%= link_to "We have plenty of time! Ask me another question", ask_path %>

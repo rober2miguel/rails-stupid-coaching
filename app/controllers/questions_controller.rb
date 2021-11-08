@@ -9,12 +9,12 @@ class QuestionsController < ApplicationController
   end
 
   def coach_answer(user_question)
-    if user_question == "I am going to work!" || user_question == "I am going to work right now!".upcase
-      return "Great!"
-    elsif user_question.end_with?("?")
-      return "Silly question, get dressed and go to work!"
+    if user_question == 'I am going to work!' || user_question == 'I am going to work right now!'.upcase
+      'Great!'
+    elsif user_question.end_with?('?')
+      'Silly question, get dressed and go to work!'
     else
-      return "I don't care, get dressed and go to work!"
+      'I dont care, get dressed and go to work!'
     end
   end
 end
